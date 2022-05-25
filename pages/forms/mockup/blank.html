@@ -41,35 +41,7 @@
 
       .box-detail{
           display: flex;
-          width: 100%;
 
-      }
-
-      .box-book table{
-        width: 100%;
-      }
-
-      .box-book tr td:nth-child(1){
-        text-align: center;
-      }
-
-      .box-book tr:nth-child(1){
-        font-weight: bold;
-      }
-
-      .box-input-buku{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .box-input-buku-child{
-        padding: 0px 8px;
-      }
-
-      .box-input-buku-child input{
-        margin-left: 10px;
       }
     </style>
   </head>
@@ -205,144 +177,26 @@
                 <!-- form start -->
                 <form role="form">
                     <div class="box-body">
-                        <div class="row">
-                          <div class="col-sm-6 col-md-4">
+
+                        <div class="box-detail">
                             <div class="box-detail-child box-first">
-                              <div class="box-body">
-                                  <div class="form-group">
-                                      <strong>KODE SP</strong>
-                                      <p>X220000</p>    
-                                  </div>
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <strong>Kode SP</strong>
+                                        <span>X220000</span>    
+                                    </div>
 
-                                  <div class="form-group">
-                                      <strong>CABANG</strong>
-                                      <p>X220000</p>
-
-                                  </div>
-
-                                  <div class="form-group">
-                                      <strong>PERIODE JUAL</strong>
-                                      <p>X220000</p>
-
-                                  </div>
-
-                                  <div class="form-group">
-                                      <strong>DANA BOS</strong>
-                                      <p>X220000</p>
-
-                                  </div>
-
-                                  <div class="form-group">
-                                      <strong>SALES</strong>
-                                      <p>X220000</p>
-
-                                  </div>
-
-                                  <div class="form-group">
-                                      <strong>CUSTOMER</strong>
-                                      <p>X220000</p>
-
-                                  </div>
-                                  
-                              </div>
+                                    <div class="form-group">
+                                        <strong>Kode SP</strong>
+                                    <span>X220000</span>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-sm-6 col-md-4">
-
                             <div class="box-detail-child box-second">
-                              <div class="box-body">
 
-
-                                <div class="form-group">
-                                  <strong>ADMIN</strong>
-                                  <p>X220000</p>
-
-                                </div>
-
-                                <div class="form-group">
-                                    <strong>TANGGAL SP</strong>
-                                    <p>X220000</p>
-
-                                </div>
-
-                                <div class="form-group">
-                                    <strong>TANGGAL RENCANA KIRIM</strong>
-                                    <p>X220000</p>
-
-                                </div>
-
-                                <div class="form-group">
-                                    <strong>CATATAN</strong>
-                                    <p>X220000</p>
-
-                                </div>
-
-                                <div class="form-group">
-                                    <strong>MAX RETUR </strong>
-                                    <p>X220000</p>
-
-                                </div>
-                              </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="box-book">
-                          <div class="container">
-                            <h2 class="page-header">
-                              Daftar Buku
-                            </h2>
 
-                            <div class="box box-solid">
-                              <div class="box-header with-border">
-                                <h3 class="box-title">Tambah Buku</h3>
-                              </div><!-- /.box-header -->
-                              <div class="box-body">
-                                <div class="box-input-buku">
-                                  <div class="box-input-buku-child">
-                                    <strong>Nama Buku</strong>
-                                    <input type="text" name="nama_buku" id="nama_buku">
-                                  </div>
-                                  <div class="box-input-buku-child">
-                                    <strong>Exemplar</strong>
-                                    <input type="text" name="exemplar" id="exemplar">
-                                  </div>
-                                  <div class="box-input-buku-child">
-                                    <button class="btn btn-primary">Submit</button>
-                                  </div>
-                                </div>
-                              </div><!-- /.box-body -->
-                            </div><!-- /.box -->
-
-                            <table class="table-bordered table">
-                              <tr>
-                                <td>No.</td>
-                                <td>Kode Buku</td>
-                                <td>Nama Buku</td>
-                                <td>Exemplar</td>
-                                <td>Action</td>
-                              </tr>
-                              <tr>
-                                <td>1</td>
-                                <td>BK1111</td>
-                                <td>Contoh Nama Buku 1</td>
-                                <td>100</td>
-                                <td>
-                                  <button class="btn btn-warning">Edit</button>
-                                  <button class="btn btn-danger">Delete</button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>BK1112</td>
-                                <td>Contoh Nama Buku 2</td>
-                                <td>200</td>
-                                <td>
-                                  <button class="btn btn-warning">Edit</button>
-                                  <button class="btn btn-danger">Delete</button>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
                         </div>
                     </div>
                 </form>
