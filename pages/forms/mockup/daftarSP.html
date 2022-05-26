@@ -43,6 +43,33 @@
           display: flex;
 
       }
+
+      .box-input-buku{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box-input-buku-child{
+        padding: 0px 8px;
+        min-width: 200px;
+      }
+      
+      .box-input-buku-child.submit{
+        padding: 0px 8px;
+        min-width: 1px;
+      }
+
+      .box-input-buku-child input{
+        margin-left: 10px;
+      }
+      table td:nth-child(1) {
+        text-align: center;
+      }
+      .box-filter{
+        margin: 10px 70px;
+      }
     </style>
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -174,15 +201,77 @@
                 <div class="box-header with-border">
                   <h3 class="box-title">Daftar SP</h3>
                 </div><!-- /.box-header -->
+
+                <div class="box box-solid">
+                  <div class="box-filter">
+                    <div class="box-body">
+                      <div class="box-input-buku">
+                        <div class="box-input-buku-child">
+                          <strong>Periode</strong>
+                          <select class="form-control">
+                            <option>Semester 01 2022/2023</option>
+                          </select>
+                        </div>
+                        <div class="box-input-buku-child">
+                          <strong>Sales</strong>
+                          <select class="form-control">
+                            <option>Mawar</option>
+                          </select>
+                        </div>
+                        <div class="box-input-buku-child">
+                          <strong>Cabang</strong>
+                          <select class="form-control">
+                            <option>Yogyakarta</option>
+                          </select>
+                        </div>
+                        <div class="box-input-buku-child">
+                          <strong>Customer</strong>
+                          <select class="form-control">
+                            <option>Semua</option>
+                          </select>
+                        </div>
+                        <div class="box-input-buku-child submit">
+                          <button class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div><!-- /.box-body -->
+                  </div>
+                </div><!-- /.box -->
                 <!-- form start -->
                 <form role="form">
                     <div class="box-body">
                         <table class="table-bordered table">
                             <tr>
-                                td*
+                                <td>No</td>
+                                <td>Kode SP</td>
+                                <td>Cabang</td>
+                                <td>Sales</td>
+                                <td>Customer</td>
+                                <td>Action</td>
                             </tr>
-                            <tr></tr>
-                            <tr></tr>
+                            <tr>
+                              <td>1</td>
+                              <td>X220000</td>
+                              <td>YOGYA</td>
+                              <td>MAWAR</td>
+                              <td>SMP NEGERI 1 SUKAMAJU</td>
+                              <td>
+                                
+                                <button class="btn btn-warning">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>X220000</td>
+                              <td>YOGYA</td>
+                              <td>MAWAR</td>
+                              <td>SMP NEGERI 2 SUKAMAJU</td>
+                              <td>
+                                <button class="btn btn-warning">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                              </td>
+                            </tr>
                         </table>
                     </div>
                 </form>
